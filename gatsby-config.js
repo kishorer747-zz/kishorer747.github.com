@@ -6,31 +6,45 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    siteTitle: `ConfusedEngineer`,    
+    siteTitleAlt: `Confused Engineer - Personal blog`,
+    siteHeadline: `Confused Engineer - Personal blog`,
+    siteUrl: `https://kishorer747.github.io`,
+    siteDescription: `Personal Blog. Biking. Motorcycle. Travel. Technology. Software. Wander`,
+    siteLanguage: `en`,
+    siteImage: `/banner.jpg`,
+    author: `Kishore Rajendra`,
   },
   plugins: [
     {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
-      // See the theme's README for all available options
       options: {
         navigation: [
           {
-            title: `Blog`,
+            title: `blog`,
             slug: `/blog`,
           },
           {
-            title: `About`,
-            slug: `/about`,
+            title: `TIL`,
+            slug: `/til`,
+          },
+          {
+            title: `movies`,
+            slug: `/movies`,
+          },
+          {
+            title: `places`,
+            slug: `/places`,
           },
         ],
         externalLinks: [
           {
-            name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
+            name: `Instagram`,
+            url: `https://www.instagram.com/confusedengineer.in/`,
           },
           {
-            name: `Instagram`,
-            url: `https://www.instagram.com/lekoarts.de/`,
+            name: `LinkedIn`,
+            url: `https://in.linkedin.com/in/kishorer747`,
           },
         ],
       },
@@ -38,16 +52,16 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: process.env.GOOGLE_ANALYTICS_ID,
+        trackingId: "G-4TTE6V5TRY",
       },
     },
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `minimal-blog - @lekoarts/gatsby-theme-minimal-blog`,
-        short_name: `minimal-blog`,
-        description: `Typography driven, feature-rich blogging theme with minimal aesthetics. Includes tags/categories support and extensive features for code blocks such as live preview, line numbers, and code highlighting.`,
+        name: `Confused Engineer - Personal blog`,
+        short_name: `confused|engineer`,
+        description: `Personal Blog. Biking. Motorcycle. Travel. Technology. Software. Wander`,
         start_url: `/`,
         background_color: `#fff`,
         theme_color: `#6B46C1`,
