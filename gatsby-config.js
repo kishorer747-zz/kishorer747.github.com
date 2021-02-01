@@ -6,10 +6,10 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
   siteMetadata: {
-    siteTitle: `ConfusedEngineer`,    
-    siteTitleAlt: `Confused Engineer - Personal blog`,
-    siteHeadline: `Confused Engineer - Personal blog`,
-    siteUrl: `https://kishorer747.github.io`,
+    siteTitle: `Miles To Go Before I Sleep`,    
+    siteTitleAlt: `Miles To Go Before I Sleep - Personal blog`,
+    siteHeadline: `Miles To Go Before I Sleep - Personal blog`,
+    siteUrl: `https://milestogobeforeisleep.in`,
     siteDescription: `Personal Blog. Biking. Motorcycle. Travel. Technology. Software. Wander`,
     siteLanguage: `en`,
     siteImage: `/banner.jpg`,
